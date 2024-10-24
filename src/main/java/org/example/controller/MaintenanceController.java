@@ -1,11 +1,11 @@
 package org.example.controller;
 
-import model.Attraction;
-import model.Sale;
 import org.example.model.Attraction;
-import repository.AttractionRepository;
-import repository.CostRepository;
-import repository.SaleRepository;
+import org.example.model.Sale;
+import org.example.model.Attraction;
+import org.example.repository.AttractionRepository;
+import org.example.repository.CostRepository;
+import org.example.repository.SaleRepository;
 
 import java.io.FileNotFoundException;
 import java.util.*;

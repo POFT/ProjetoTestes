@@ -6,15 +6,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class ClientControllerTest {
 
-    @Test
-    void attractions() {
-    }
 
-    @Test
-    void favoriteAttractionForAdults() {
-    }
-
-    @Test
-    void favoriteAttractionsForChildren() {
-    }
+    // Testar caminho do ficheiro CSV
+    // Testar caminho
 }
