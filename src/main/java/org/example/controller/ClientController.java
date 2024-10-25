@@ -20,6 +20,11 @@ public class ClientController {
         this.saleRepository = saleRepository;
     }
 
+
+    public SaleRepository getSaleRepository() {
+        return saleRepository;
+    }
+
     /**
      * Print all the attractions
      *

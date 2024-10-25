@@ -5,13 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="25b8f3f3-c395-4d16-bc16-d1c3711928a8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/resources/Cesaeland_atracoes.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/Cesaeland_custos.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/Cesaeland_logins.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/Cesaeland_vendas.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/AdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/MaintenanceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/MaintenanceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/ClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/ClientController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/view/ClientView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/view/ClientView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/example/controller/AdminControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/controller/AdminControllerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/example/controller/ClientControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/controller/ClientControllerTest.java" afterDir="false" />
     </list>
@@ -36,9 +33,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="2nt0xj787YMYuyraAibSMYBh8LK" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -51,6 +48,8 @@
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "Application.Main.executor": "Run",
+    "Gradle.AdminControllerTest.executor": "Run",
+    "Gradle.ClientControllerTest.executor": "Run",
     "Gradle.ProjetoTestes [:Main.main()].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -98,6 +97,9 @@
       <option name="presentableId" value="Default" />
       <updated>1729777312952</updated>
       <workItem from="1729777313975" duration="10685000" />
+      <workItem from="1729855910936" duration="13182000" />
+      <workItem from="1729871228575" duration="702000" />
+      <workItem from="1729872757946" duration="5046000" />
     </task>
     <servers />
   </component>

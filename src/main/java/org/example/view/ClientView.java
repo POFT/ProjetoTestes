@@ -26,7 +26,7 @@ public class ClientView {
         while (!exit) {
             System.out.println("\n✨ --- Bem-Vindo ao Mundo Magico CESAELand, o que deseja fazer? --- \uD83C\uDFA2");
             System.out.println("\n1. \uD83E\uDD29 Ver Atrações Disponíveis");
-            System.out.println("2. ⭐ Ver Atrações Favoritas");
+            System.out.println("2. Ver Atrações Favoritas");
             System.out.println("3. \uD83D\uDEAA Sair");
             System.out.print("\n\uD83C\uDFAF Escolha uma opção: ");
             int option = scanner.nextInt();
