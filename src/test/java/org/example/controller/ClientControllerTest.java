@@ -16,13 +16,12 @@ import static org.junit.jupiter.api.Assertions.*;
 class ClientControllerTest {
 
     private ClientController clientController;
-
     private AttractionRepository attractionRepository;
     private SaleRepository saleRepository;
 
     @BeforeEach
     public void setUp() throws FileNotFoundException {
-
+        // Inicializar os repositórios antes de cada teste
         attractionRepository = new AttractionRepository();
         saleRepository = new SaleRepository();
         clientController = new ClientController(attractionRepository,saleRepository);
@@ -38,16 +37,8 @@ class ClientControllerTest {
     public void testAttractionsCount() throws FileNotFoundException {
         // Valor esperado para o teste
         int expected = 10;
-
-        // Repositório com o caminho do ficheiro CSV
-        AttractionRepository attractionRepository = new AttractionRepository();
-
-        // Inicializar o controlador
-        ClientController clientController = new ClientController(attractionRepository,null);
-
         // Obter o resultado chamando o método
         int result = clientController.attractions().size();
-
         // Verificar se o resultado corresponde ao valor esperado
         assertEquals(expected, result);
     }
@@ -62,16 +53,8 @@ class ClientControllerTest {
     public void testSalesCount() throws FileNotFoundException {
         // Valor esperado para o teste
         int expected = 1299;
-
-        // Repositório com o caminho do ficheiro CSV
-        SaleRepository saleRepository = new SaleRepository();
-
-        // Inicializar o controlador
-        ClientController clientController = new ClientController(null,saleRepository);
-
         // Obter o resultado chamando o método
         int result = clientController.getSaleRepository().getSalesArray().size();
-
         // Verificar se o resultado corresponde ao valor esperado
         assertEquals(expected, result);
     }
@@ -85,7 +68,6 @@ class ClientControllerTest {
     public void testSalesCountAdult() throws FileNotFoundException {
         // Valor esperado para o teste
         int expected = 667;
-
         // Instanciar o método para validar o resultado
         int result = 0;
         for (Sale sale : saleRepository.getSalesArray()) {
@@ -93,7 +75,6 @@ class ClientControllerTest {
                 result++;
             }
         }
-
         // Validar o resultado
         assertEquals(expected, result);
     }
@@ -107,7 +88,6 @@ class ClientControllerTest {
     public void testSalesCountChildren() throws FileNotFoundException {
         // Valor esperado para o teste
         int expected = 632;
-
         // Instanciar o método para validar o resultado
         int result = 0;
         for (Sale sale : saleRepository.getSalesArray()) {
@@ -115,7 +95,6 @@ class ClientControllerTest {
                 result++;
             }
         }
-
         // Validar o resultado
         assertEquals(expected, result);
     }
@@ -131,14 +110,6 @@ class ClientControllerTest {
     public void testAdultFavoriteAttraction() throws FileNotFoundException {
         // Valor esperado para o teste
         String expected = "Montanha Russa da Programacao";
-
-        // Repositórios com os caminhos dos ficheiros CSV
-        AttractionRepository attractionRepository = new AttractionRepository();
-        SaleRepository saleRepository = new SaleRepository();
-
-        // Inicializar o controlador
-        ClientController clientController = new ClientController(attractionRepository,saleRepository);
-
         // Instanciar o método para validar o resultado
         String result = clientController.favoriteAttractionForAdults();
         assertEquals(expected, result);
@@ -154,14 +125,6 @@ class ClientControllerTest {
     public void testChildrenFavoriteAttraction() throws FileNotFoundException {
         // Valor esperado para o teste
         String expected= "Escorregas da IA";
-
-        // Repositórios com os caminhos dos ficheiros CSV
-        AttractionRepository attractionRepository = new AttractionRepository();
-        SaleRepository saleRepository = new SaleRepository();
-
-        // Inicializar o controlador
-        ClientController clientController = new ClientController(attractionRepository,saleRepository);
-
         // Instanciar o método para validar o resultado
         String result = clientController.favoriteAttractionsForChildren();
         assertEquals(expected, result);
