@@ -86,13 +86,6 @@ class ClientControllerTest {
         // Valor esperado para o teste
         int expected = 667;
 
-        // Repositórios com os caminhos dos ficheiros CSV
-        AttractionRepository attractionRepository = new AttractionRepository();
-        SaleRepository saleRepository = new SaleRepository();
-
-        // Inicializar o controlador
-        ClientController clientController = new ClientController(attractionRepository,saleRepository);
-
         // Instanciar o método para validar o resultado
         int result = 0;
         for (Sale sale : saleRepository.getSalesArray()) {
@@ -114,13 +107,6 @@ class ClientControllerTest {
     public void testSalesCountChildren() throws FileNotFoundException {
         // Valor esperado para o teste
         int expected = 632;
-
-        // Repositórios com os caminhos dos ficheiros CSV
-        AttractionRepository attractionRepository = new AttractionRepository();
-        SaleRepository saleRepository = new SaleRepository();
-
-        // Inicializar o controlador
-        ClientController clientController = new ClientController(attractionRepository,saleRepository);
 
         // Instanciar o método para validar o resultado
         int result = 0;
