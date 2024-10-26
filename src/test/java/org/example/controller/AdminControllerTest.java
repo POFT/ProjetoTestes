@@ -31,15 +31,11 @@ class AdminControllerTest {
         // Valor esperado para o teste
         int expected = 6;
         // Obter o resultado chamando o método
+
         int result = userRepository.getUsersArray().size();
         // Verificar se o resultado corresponde ao valor esperado
         assertEquals(expected, result);
     }
-
-
-
-
-
 
     /**
      * Testar se o total de vendas, corresponde ao que está nos ficheiros CSV,
@@ -71,7 +67,6 @@ class AdminControllerTest {
         assertEquals(expected, result, 0.01);
     }
 
-
     /**
      * Testar a atração mais popular,
      * corresponde à atração com mais vendas,
@@ -85,7 +80,6 @@ class AdminControllerTest {
         Attraction result = adminController.mostPopularAttraction();
         assertEquals(expected, result.getAttractionName());
     }
-
 
     /**
      * Testar a atração mais popular entre adultos,
