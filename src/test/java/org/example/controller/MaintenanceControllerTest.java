@@ -27,6 +27,7 @@ class MaintenanceControllerTest {
     void consultNextRevisions() throws FileNotFoundException {
         List<Map.Entry<Attraction, Integer>> nextRevisions = maintenanceController.consultNextRevisions();
 
+        // Validar o resultado
         assertEquals(3, nextRevisions.size());
     }
 
@@ -40,6 +41,7 @@ class MaintenanceControllerTest {
     void consultRevisionHistory() throws FileNotFoundException {
         List<Attraction> revisionHistory = maintenanceController.consultRevisionHistory();
 
+        // Validar o resultado
         assertEquals(3, revisionHistory.size());
     }
 }

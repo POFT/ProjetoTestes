@@ -16,7 +16,7 @@ class AdminControllerTest {
 
     @BeforeEach
     public void setUp() throws FileNotFoundException {
-
+        // Inicializar os repositórios antes de cada teste
         userRepository = new UserRepository();
         adminController = new AdminController();
 
@@ -30,8 +30,6 @@ class AdminControllerTest {
     public void testUserLoginsCount() {
         // Valor esperado para o teste
         int expected = 6;
-        // Obter o resultado chamando o método
-
         int result = userRepository.getUsersArray().size();
         // Verificar se o resultado corresponde ao valor esperado
         assertEquals(expected, result);
@@ -45,9 +43,7 @@ class AdminControllerTest {
     public void testTotalSales() {
         // Valor esperado para o teste
         double expected = 8144.0;
-        // Obter o resultado chamando o método
         double result = adminController.totalSales();
-
         // Validar o resultado
         assertEquals(expected, result, 0.01);
     }
@@ -60,9 +56,7 @@ class AdminControllerTest {
     public void testTotalProfit() {
         // Valor esperado para o teste
         double expected = -3716.90;
-        // Obter o resultado chamando o método
         double result = adminController.totalProfit();
-
         // Validar o resultado
         assertEquals(expected, result, 0.01);
     }
@@ -76,8 +70,8 @@ class AdminControllerTest {
     public void testMostPopularAttraction() {
         // Valor esperado para o teste
         String expected = "Escorregas da IA";
-        // Instanciar o método para validar o resultado
         Attraction result = adminController.mostPopularAttraction();
+        // Validar o resultado
         assertEquals(expected, result.getAttractionName());
     }
 
@@ -90,8 +84,8 @@ class AdminControllerTest {
     public void testAdultMostPopularAttraction() {
         // Valor esperado para o teste
         String expected = "Montanha Russa da Programacao";
-        // Instanciar o método para validar o resultado
         Attraction result = adminController.mostPopularAttractionByClientType("adulto");
+        // Validar o resultado
         assertEquals(expected, result.getAttractionName());
     }
 
@@ -104,8 +98,8 @@ class AdminControllerTest {
     public void testChildrenMostPopularAttraction() {
         // Valor esperado para o teste
         String expected = "Escorregas da IA";
-        // Instanciar o método para validar o resultado
         Attraction result = adminController.mostPopularAttractionByClientType("crianca");
+        // Validar o resultado
         assertEquals(expected, result.getAttractionName());
     }
 
@@ -119,8 +113,8 @@ class AdminControllerTest {
     public void testMostProfitableAttraction() {
         // Valor esperado para o teste
         String expected = "Montanha Russa da Programacao";
-        // Instanciar o método para validar o resultado
         Attraction result = adminController.mostProfitableAttraction();
+        // Validar o resultado
         assertEquals(expected, result.getAttractionName());
     }
 
@@ -133,8 +127,8 @@ class AdminControllerTest {
     public void testLessProfitableAttraction() {
         // Valor esperado para o teste
         String expected = "Rio Lento Quality Assurance";
-        // Instanciar o método para validar o resultado
         Attraction result = adminController.lessProfitableAttraction();
+        // Validar o resultado
         assertEquals(expected, result.getAttractionName());
     }
 
@@ -147,8 +141,8 @@ class AdminControllerTest {
     public void testBestPricePerSecondAttraction() {
         // Valor esperado para o teste
         String expected = "Rio Lento Quality Assurance";
-        // Instanciar o método para validar o resultado
         Attraction result = adminController.bestPricePerSecond();
+        // Validar o resultado
         assertEquals(expected, result.getAttractionName());
     }
 

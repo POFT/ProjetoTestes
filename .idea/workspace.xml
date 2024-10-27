@@ -5,8 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="25b8f3f3-c395-4d16-bc16-d1c3711928a8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/repository/AttractionRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/repository/CostRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/repository/SaleRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/repository/UserRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/util/CSVAttractionsReaderTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/util/CSVCostsReaderTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/util/CSVSalesReaderTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/util/CSVUsersReaderTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/example/controller/AdminControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/controller/AdminControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/controller/ClientControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/controller/ClientControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/controller/MaintenanceControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/controller/MaintenanceControllerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +31,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -44,8 +54,13 @@
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "Application.Main.executor": "Run",
-    "Gradle.AdminControllerTest.executor": "Run",
+    "Gradle.AdminControllerTest.executor": "Coverage",
+    "Gradle.CSVAttractionsReaderTest.executor": "Run",
+    "Gradle.CSVCostsReaderTest.executor": "Run",
+    "Gradle.CSVSalesReaderTest.executor": "Run",
+    "Gradle.CSVUsersReaderTest.executor": "Run",
     "Gradle.ClientControllerTest.executor": "Run",
+    "Gradle.CostRepositoryTest.executor": "Run",
     "Gradle.MaintenanceControllerTest.executor": "Run",
     "Gradle.ProjetoTestes [:Main.main()].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -99,6 +114,9 @@
       <workItem from="1729872757946" duration="5081000" />
       <workItem from="1729936878530" duration="12348000" />
       <workItem from="1729949800968" duration="2135000" />
+      <workItem from="1729958827319" duration="1710000" />
+      <workItem from="1729977653810" duration="333000" />
+      <workItem from="1730023280204" duration="7886000" />
     </task>
     <servers />
   </component>
@@ -107,5 +125,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/ProjetoTestes$AdminControllerTest.ic" NAME="AdminControllerTest Coverage Results" MODIFIED="1730030383164" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/ProjetoTestes$ClientControllerTest.ic" NAME="ClientControllerTest Coverage Results" MODIFIED="1730030458816" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
   </component>
 </project>
